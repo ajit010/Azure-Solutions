@@ -1,0 +1,47 @@
+-- customer_table.sql
+
+CREATE TABLE customer (
+    customer_id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100)
+);
+
+-- Insert 10 rows of data into customer table
+INSERT INTO customer (first_name, last_name, email) VALUES 
+('John', 'Doe', 'john.doe@example.com'),
+('Jane', 'Smith', 'jane.smith@example.com'),
+('Michael', 'Johnson', 'michael.johnson@example.com'),
+('Emily', 'Davis', 'emily.davis@example.com'),
+('Chris', 'Brown', 'chris.brown@example.com'),
+('Jessica', 'Wilson', 'jessica.wilson@example.com'),
+('Daniel', 'Martinez', 'daniel.martinez@example.com'),
+('Sarah', 'Taylor', 'sarah.taylor@example.com'),
+('David', 'Anderson', 'david.anderson@example.com'),
+('Laura', 'Moore', 'laura.moore@example.com');
+
+
+
+
+
+-- product_table.sql
+
+CREATE TABLE product (
+    product_id INT PRIMARY KEY AUTO_INCREMENT,
+    product_name VARCHAR(100),
+    price DECIMAL(10, 2),
+    stock_quantity INT
+);
+
+-- Insert 10 rows of data into product table
+INSERT INTO product (product_name, price, stock_quantity) VALUES
+('Laptop', 800.00, 15),
+('Smartphone', 600.00, 30),
+('Tablet', 300.00, 20),
+('Monitor', 150.00, 25),
+('Keyboard', 25.00, 50),
+('Mouse', 20.00, 50),
+('Headphones', 50.00, 40),
+('Webcam', 70.00, 35),
+('Printer', 120.00, 10),
+('Router', 80.00, 18);
